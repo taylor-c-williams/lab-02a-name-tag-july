@@ -6,8 +6,9 @@ main {
     width: 400px;
     display: grid;
     grid-template-rows: 1fr 1fr .5fr;
-    box-shadow: 2px 2px 10px 2px gray;
+    box-shadow: 23px 23px 1px 5px #505050;
     border-radius: 20px;
+    border: dashed .5px;
     }
     
     .top-section {
