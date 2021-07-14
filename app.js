@@ -7,7 +7,7 @@ const pinkButtonEl = document.getElementById('pink-button')
 
 
 
-buttonEl.addEventListener('click', () => {
+buttonEl.addEventListener('click', () => {         
     const inputEl = document.getElementById('name-input')
     nameEl.textContent = inputEl.value;
 })

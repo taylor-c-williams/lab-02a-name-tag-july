@@ -76,10 +76,12 @@ main{
     font-family: 'Space Mono', monospace;
     text-align: center;
     border: dashed 1px;
+    box-shadow: 5px 5px 1px 0px rgba(128, 128, 128, 0.5);
 }
 #name-button{
     font-family: 'Space Mono', monospace;
-    margin-left:5px;
+    margin-left:15px;
     border: dashed 1px;
+    box-shadow: 5px 5px 1px 0px rgba(128, 128, 128, 0.5);
 }
 
