@@ -75,9 +75,11 @@ main{
 #name-input{
     font-family: 'Space Mono', monospace;
     text-align: center;
+    border: dashed 1px;
 }
 #name-button{
     font-family: 'Space Mono', monospace;
     margin-left:5px;
+    border: dashed 1px;
 }
-    
+
