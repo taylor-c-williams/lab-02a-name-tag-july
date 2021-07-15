@@ -38,6 +38,8 @@ blackButtonEl.addEventListener('click', () => {
 whiteButtonEl.addEventListener('click', () => {         
     document.getElementById('middle-section').style.backgroundColor = "white" 
     document.getElementById('middle-section').style.color = "black"
+    nameEl.textContent = "unknown!"
+    pronounEl.textContent = "unknown!"
     
 })
 
@@ -45,6 +47,7 @@ const pacificoEl = document.getElementById('pacifico')
 const playfairEl = document.getElementById('playfair-display')
 const quicksandEl = document.getElementById('quicksand')
 const yomogiEl = document.getElementById('yomogi')
+const spacemonoEl = document.getElementById('space-mono')
 
 pacificoEl.addEventListener('click', () => {         
     document.getElementById('middle-section').style.fontFamily = "'Pacifico',cursive" })
@@ -57,3 +60,6 @@ quicksandEl.addEventListener('click', () => {
 
 yomogiEl.addEventListener('click', () => {         
     document.getElementById('middle-section').style.fontFamily="'yomogi', cursive" })
+
+spacemonoEl.addEventListener('click', () => {         
+     document.getElementById('middle-section').style.fontFamily="'Space Mono', monospace" })

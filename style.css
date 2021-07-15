@@ -56,6 +56,7 @@ h1, h2{margin: 0;
 
 main{
     display: grid;
+    grid-template-columns: 2.5fr 5fr 1fr;
 }
 
 .nametag {
@@ -64,6 +65,7 @@ main{
     box-shadow: 19px 19px 1px 5px rgba(128, 128, 128, 0.5);
     border-radius: 20px;
     border: dashed .5px;
+    grid-column: 2;
     display: grid;
     grid-template-rows: 1fr 2fr  1fr;
 }
@@ -92,6 +94,7 @@ main{
     #middle-section {
         display: grid;
         grid-template-rows: 1fr .5fr;
+        text-align: center;
         align-items: center;
         justify-content: center;
         font-size: 2.5rem;
@@ -110,6 +113,7 @@ main{
         margin-top:50px;
         margin-left:15px;
         display: flex;
+        grid-column: 2;
         align-items: bottom;
         justify-content: left;   
         flex-direction: row;
@@ -119,6 +123,7 @@ main{
     .color-section {
         margin-top: 20px;
         display: flex; 
+        grid-column: 2;
         width:550px;
         align-items: bottom;
         justify-content: left;   
@@ -126,12 +131,83 @@ main{
         
     }
     
+.dropdown {
+        width : 300px; 
+        background: white;
+        margin-top : 20px ; 
+        font-family: 'Space Mono', monospace;
+        grid-column: 2;
+        
+    }
+      
+.drop-span {
+        border:1px dashed;
+        padding:5px;
+        margin-left:15px;
+        background :white;
+        font-size : .85em;
+        font-family: 'Space Mono', monospace;
+        cursor : pointer;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+  
+      
+    .slide {
+        height:0px;
+        overflow: hidden;
+        text-align: center;
+        transition: height .4s ease;
+        list-style-type: none
+    }
+  
+  
+    li a {text-decoration: none; 
+          border: 1px dashed;
+          padding:5px;
+          font-size : .85em;
+          color : #2d2f31;
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+    }
+  
+    li a:hover {
+      -webkit-animation-name: hvr-hang-sink, hvr-hang;
+      animation-name: hvr-hang-sink, hvr-hang;
+      -webkit-animation-duration: .3s, 1.5s;
+      animation-duration: .3s, 1.5s;
+      -webkit-animation-delay: 0s, .3s;
+      animation-delay: 0s, .3s;
+      -webkit-animation-timing-function: ease-out, ease-in-out;
+      animation-timing-function: ease-out, ease-in-out;
+      -webkit-animation-iteration-count: 1, infinite;
+      animation-iteration-count: 1, infinite;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-direction: normal, alternate;
+      animation-direction: normal, alternate;
+    }
+  
+  
+    .slide li {padding : 5px;}
+      
+      #touch { position:absolute;opacity: 1; height: 0px;}    
+      
+      #touch:checked + .slide {height: 250px;
+    } 
+
 #name-input{
     font-family: 'Space Mono', monospace;
     text-align: center;
     border: dashed 1px;
     box-shadow: 5px 5px 1px 0px rgba(128, 128, 128, 0.5);
 }
+
 #name-button{
     font-family: 'Space Mono', monospace;
     margin-left:15px;
@@ -341,74 +417,6 @@ main{
     animation-direction: normal, alternate;}
    
 
-
-    .dropdown {
-      width : 300px; 
-      background: white;
-      margin-top : 20px ; 
-      font-family: 'Space Mono', monospace;
-      
-    }
-    
-   .drop-span {
-      border:1px dashed;
-      padding:5px;
-      margin-left:15px;
-      background :white;
-      font-size : .85em;
-      font-family: 'Space Mono', monospace;
-      cursor : pointer;
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.5);
-   }
-
-    
-    .slide {
-      height:0px;
-      overflow: hidden;
-      text-align: center;
-      transition: height .4s ease;
-      list-style-type: none
-    }
-
-
-    li a {text-decoration: none; 
-        border: 1px dashed;
-        padding:5px;
-        font-size : .85em;
-        color : #2d2f31;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-    }
-
-    li a:hover {
-    -webkit-animation-name: hvr-hang-sink, hvr-hang;
-    animation-name: hvr-hang-sink, hvr-hang;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;}
-
-
-    .slide li {padding : 5px;}
-    
-    #touch { position:absolute;opacity: 1; height: 0px;}    
-    
-    #touch:checked + .slide {height: 200px;} 
-
     #pacifico{
         font-family: 'Pacifico', cursive;
     }
@@ -423,4 +431,8 @@ main{
 
     #yomogi {
         font-family: 'Yomogi', cursive;
+    }
+
+    #space-mono {
+        font-family: 'Space Mono', monospace;
     }
