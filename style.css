@@ -196,10 +196,15 @@ main{
   
     .slide li {padding : 5px;}
       
-      #touch { position:absolute;opacity: 1; height: 0px;}    
+      #touch {opacity: 1; height: 0px; }    
       
       #touch:checked + .slide {height: 250px;
     } 
+    ul {
+        display: block;
+        margin:0;
+        
+    }
 
 #name-input{
     font-family: 'Space Mono', monospace;
@@ -419,20 +424,30 @@ main{
 
     #pacifico{
         font-family: 'Pacifico', cursive;
+        display: inline-block;
+        width:150px;
     }
 
     #playfair-display{
         font-family: 'Playfair Display', serif;
+        display: inline-block;
+        width:150px;
     }
 
     #quicksand {
         font-family: 'Quicksand', sans-serif;
+        display: inline-block;
+        width:150px;
     }
 
     #yomogi {
         font-family: 'Yomogi', cursive;
+        display: inline-block;
+        width:150px;
     }
 
     #space-mono {
         font-family: 'Space Mono', monospace;
+        display: inline-block;
+        width:150px;
     }
