@@ -20,7 +20,7 @@ main{
 .nametag {
     height: 280px;
     width: 400px;
-    box-shadow: 23px 23px 1px 5px #505050;
+    box-shadow: 19px 19px 1px 5px rgba(128, 128, 128, 0.5);
     border-radius: 20px;
     border: dashed .5px;
     display: grid;
