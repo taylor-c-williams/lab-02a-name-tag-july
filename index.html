@@ -1,73 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/taylor-c-williams/lab-02a-name-tag-july/main/favicon.ico">
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://raw.githubusercontent.com/taylor-c-williams/lab-02a-name-tag-july/main/favicon.ico"
+		/>
 
-    <title>Taylor's Nametag</title>
-</head>
-<body>
+		<title>Taylor's Nametag</title>
+	</head>
+	<body>
+		<main>
+			<div class="nametag">
+				<section class="top-section">
+					<h1>hello</h1>
+					<h2>my name is</h2>
+				</section>
 
+				<section id="middle-section">
+					<span id="name">Taylor</span>
+					<span id="pronoun">She/Her</span>
+				</section>
 
-<main>
-    <div class="nametag">
-     <section class="top-section">
-         <h1>hello</h1>
-         <h2>my name is</h2>
-    </section>
+				<section class="bottom-section"></section>
+			</div>
 
-     <section id="middle-section">
-      <span id="name">Taylor</span>
-      <span id="pronoun">She/Her</span>
-     </section>
-    
-    
-    <section class="bottom-section">
-     </section>
+			<section class="input-section">
+				<input id="name-input" placeholder="Enter your name" />
+				<input id="pronoun-input" placeholder="Enter your pronouns" />
+				<button id="name-button">Customize it!</button>
+			</section>
 
-    </div>
+			<section class="color-section">
+				<button id="pink-button">Pink it!</button>
+				<button id="purple-button">Purple it!</button>
+				<button id="green-button">Green it!</button>
+				<button id="black-button">Black it!</button>
+				<button id="white-button">Bop it!</button>
+			</section>
 
+			<section class="dropdown">
+				<label for="touch"
+					><span class="drop-span"
+						>Font it!<img
+							src="https://cdn.iconscout.com/icon/free/png-512/keyboard-down-arrow-1780093-1518654.png"
+							height="20px"
+						/> </span
+				></label>
+				<input type="checkbox" id="touch" />
 
-  
-    <section class="input-section">
-        <input id="name-input" placeholder="Enter your name" />
-        <input id="pronoun-input" placeholder="Enter your pronouns" />  
-        <button id="name-button">Customize it!</button>     
-    </section>
-
-    <section class="color-section">
-        <button id="pink-button">Pink it!</button> 
-        <button id="purple-button">Purple it!</button> 
-        <button id="green-button">Green it!</button>
-        <button id="black-button">Black it!</button>  
-        <button id="white-button">Bop it!</button> 
-    </section>
-
-    <section class="dropdown">
-
-        <label for="touch"><span class="drop-span">Font it!<img src="https://cdn.iconscout.com/icon/free/png-512/keyboard-down-arrow-1780093-1518654.png" height=20px> </span></label>               
-        <input type="checkbox" id="touch"> 
-      
-        <ul class="slide">
-          <li><a href="#" id="pacifico">Pacifico</a></li> 
-          <li><a href="#" id="playfair-display">Playfair Display</a></li>
-          <li><a href="#" id="quicksand">Quicksand</a></li>
-          <li><a href="#" id="yomogi">Yomogi</a></li>
-          <li><a href="#" id="space-mono">Space Mono</a></li>
-        </ul>
-      
-    </section> 
- 
-</main>
- <script type="module" src="./app.js"></script>
-</body>
+				<ul class="slide">
+					<li><a href="#" id="pacifico">Pacifico</a></li>
+					<li><a href="#" id="playfair-display">Playfair Display</a></li>
+					<li><a href="#" id="quicksand">Quicksand</a></li>
+					<li><a href="#" id="yomogi">Yomogi</a></li>
+					<li><a href="#" id="space-mono">Space Mono</a></li>
+				</ul>
+			</section>
+		</main>
+		<script type="module" src="./app.js"></script>
+	</body>
 </html>
